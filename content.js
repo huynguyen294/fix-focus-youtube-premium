@@ -27,7 +27,7 @@ const observer = new MutationObserver((mutations) => {
             hider.id = "primary-below-hider";
 
             const bgColor = mode === "dark" ? "#000" : "rgba(0,0,0,0.6)";
-            hider.style.cssText = `position: absolute; top: 10px; left: -5px; width: calc(100% + 10px); height: 250px; background-image: linear-gradient(${bgColor}, transparent); opacity: 0.8; filter: blur(5px); border-radius: 12px; z-index: 1000`;
+            hider.style.cssText = `position: absolute; top: 10px; left: -5px; width: calc(100% + 10px); height: 250px; background-color: ${bgColor}; opacity: 0.8; filter: blur(5px); border-radius: 12px; z-index: 1000`;
             primaryBelow.appendChild(hider);
             return;
           }
